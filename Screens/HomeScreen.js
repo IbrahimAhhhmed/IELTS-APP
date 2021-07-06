@@ -2,34 +2,12 @@ import React from 'react';
 import {View, StyleSheet, Text, Image,Button} from "react-native";
 import ArButtons from "../Components/Ar_Buttons";
 import Header from "../Components/Header";
-import {Menu, MenuContext, MenuOption, MenuOptions, MenuTrigger} from "react-native-popup-menu";
-import {Ionicons} from "@expo/vector-icons";
 
 const HomeScreen = ({navigation}) => {
     return (
         <View style={styles.container}>
             <Header navigation={navigation}/>
-            {/*<MenuContext style={styles.menu}>*/}
-            {/*    <View>*/}
-            {/*        <Menu>*/}
-            {/*            <MenuTrigger>*/}
-            {/*                <Ionicons style={styles.ellipsis} name={'ellipsis-vertical'} size={28} />*/}
-            {/*            </MenuTrigger>*/}
 
-            {/*            <MenuOptions>*/}
-            {/*                <MenuOption onSelect={() => alert(`Save`)} text="Save" />*/}
-            {/*                <MenuOption onSelect={() => alert(`Delete`)}>*/}
-            {/*                    <Text style={{ color: 'red' }}>Delete</Text>*/}
-            {/*                </MenuOption>*/}
-            {/*                <MenuOption*/}
-            {/*                    onSelect={() => alert(`Not called`)}*/}
-            {/*                    disabled={true}*/}
-            {/*                    text="Disabled" s*/}
-            {/*                />*/}
-            {/*            </MenuOptions>*/}
-            {/*        </Menu>*/}
-            {/*    </View>*/}
-            {/*</MenuContext>*/}
             <View style={styles.slideShow}>
                 <Image source={{uri: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aWVsdHMlMjB3cml0aW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
                     width: '100%', height: 300}}/>
